@@ -1,0 +1,6 @@
+pandas
+numpy
+matplotlib
+google-cloud-automl
+pillow
+opencv-python
