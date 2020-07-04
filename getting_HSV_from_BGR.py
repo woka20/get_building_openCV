@@ -31,6 +31,7 @@ darker_brown = (float(color_codes[0])+30, float(color_codes[1])+30, float(color_
 mask = cv2.inRange(gray, brown,darker_brown)
 hsv=cv2.bitwise_and(image,image, mask=mask)
 
+cv2.imwrite("hasil_masking.jpg", hsv)
 #show the final image
 plt.subplot(1,2,1)
 plt.imshow(hsv, cmap="gray")
