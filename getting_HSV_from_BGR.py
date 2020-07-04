@@ -31,6 +31,7 @@ brown = (float(color_codes[0])+30, float(color_codes[1])+30, float(color_codes[2
 mask = cv2.inRange(gray, cream,brown)
 hsv=cv2.bitwise_and(image,image, mask=mask)
 
+#show the final image
 plt.subplot(1,2,1)
 plt.imshow(hsv, cmap="gray")
 plt.title('OSM Image')
